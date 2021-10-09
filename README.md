@@ -2,7 +2,7 @@
 An implementation of CorentinJ's [Resemblyzer](https://github.com/resemble-ai/Resemblyzer) in ort.js (onnx runtime) and tensorflow.js for audio analysis the web. 
 
 # What it can be used for
-Given a few seconds of speech it creates a summary vector of 256 values known as an encoding. This can be used in many things such as speaker verification, deepfake detection, voice cloning, speaker diarization, and much more. The pretrained model came from [the original repo](https://github.com/resemble-ai/Resemblyzer) and was converted to onnx to use with onnxjs. I rewrote all the preprocessing parts in javascript and took neccessary parts from [Magenta.js](https://github.com/magenta/magenta-js) to convert the raw audio to mel spectrograms for the network. 
+Given a few seconds of speech it creates a summary vector of 256 values known as an encoding. This can be used in many things such as speaker verification, deepfake detection, voice cloning, speaker diarization, and much more. The pretrained model came from [the original repo](https://github.com/resemble-ai/Resemblyzer) and was converted to onnx to use with onnxjs. I rewrote all the preprocessing parts in javascript and took the neccessary parts from [Magenta.js](https://github.com/magenta/magenta-js) to convert the raw audio to mel spectrograms for the network. 
 # Architecture
 The network gets fed a batch of mels (partial mels with 160 frames each) depending on the audio length and averages the embeddings of them after it goes through 3 lstm layers and a fully connected layer with a ReLU activation. According to the original repo, it works around 1000x real-time with CUDA in python though I am not sure how it does on the gpu with ort.js.
 
