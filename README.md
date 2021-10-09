@@ -38,10 +38,18 @@ You need to import tensorflow and onnxruntime. You also need the resemblyzer.min
 ```
 Javascript:
 ```javascript
-embed_audio("example_sentence.wav").then(function(t){
-  //t is a tensor with 256 values
-	t.print()
+embed_audio("example_sentence.wav").then(function(embedding){
+  //embedding is a tensor with 256 values
+  embedding.print();
 }
+
+//OR using async/await
+
+async function embed(){
+  let embedding = await embed_audio("example_sentence.wav");
+  embedding.print();
+}
+embed()
 
 
 ```
