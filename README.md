@@ -1,5 +1,5 @@
 # Resemblyzer.js
-An implementation of Resemble AI's Resemblyzer in ort.js (onnxruntime) and tensorflow.js for the web. 
+An implementation of CorentinJ's [Resemblyzer](https://github.com/resemble-ai/Resemblyzer) in ort.js (onnxruntime) and tensorflow.js for the web. 
 
 # What it can be used for
 Given a few seconds of speech it creates a summary vector of 256 values known as an encoding. This can be used in many things such as speaker verification, deepfake detection, voice cloning, speaker diarization, and much more. The pretrained model came from [the original repo](https://github.com/resemble-ai/Resemblyzer) and was converted to onnx to use with onnxjs. I rewrote the neccessary preprocessing parts in javascript and used functions from [Magenta.js](https://github.com/magenta/magenta-js) to convert the audio to mels for the network. 
