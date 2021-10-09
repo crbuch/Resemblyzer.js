@@ -17,7 +17,7 @@ Resemblyzer python            |  Resemblyzer.js
 
 
 # Code example
-You need to import tensorflow and onnxruntime. You also need the resemblyzer.min.js and the pretrained.onnx files in a folder called "Resemblyzer" in the parent directory of your website.
+You need to import tensorflow and onnxruntime. You also need the resemblyzer.min.js and the pretrained.onnx files in a folder called "Resemblyzer" in the main directory of your website.
 ```html
 <!DOCTYPE html>
 <html>
