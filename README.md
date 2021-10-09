@@ -7,7 +7,7 @@ Given a few seconds of speech it creates a summary vector of 256 values known as
 The network gets fed partial mels from each audio file and averages the embeddings of them after it goes through 3 lstm layers and a fully connected layer. According to the original repo, it works around 1000x real-time with CUDA.
 
 # Example
-The projection of resemblyzer in python v.s. the projection of resemblyzer.js (each speaker has 10 utterances)
+The projections of resemblyzer in python v.s. the projections of resemblyzer.js (each speaker has 10 utterances)
 
 
 Resemblyzer python            |  Resemblyzer.js
