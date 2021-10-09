@@ -10,9 +10,9 @@ The network gets fed partial mels from each audio file and averages the embeddin
 The projection of resemblyzer in python v.s. the projection of resemblyzer.js (each speaker has 10 utterances)
 
 
-Solarized dark             |  Solarized Ocean
+Resemblyzer python            |  Resemblyzer.js
 :-------------------------:|:-------------------------:
-![pytorch](https://EncoderMin.cooperbuch.repl.co/originalMels.png)| ![pytorch](https://EncoderMin.cooperbuch.repl.co/jsMels.png)
+![pytorch](https://EncoderMin.cooperbuch.repl.co/originalMels.png)| ![js](https://EncoderMin.cooperbuch.repl.co/jsMels.png)
 
 
 
