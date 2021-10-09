@@ -761,7 +761,7 @@ const infer = async function (mel) {
 
 
 var initialize_model = async function () {
-	//starts the session is session is undefined
+	//starts the session if session is undefined
 	__sess = await ort.InferenceSession.create("model.onnx")
 }
 
