@@ -762,7 +762,7 @@ const infer = async function (mel) {
 
 var initialize_model = async function () {
 	//starts the session if session is undefined
-	__sess = await ort.InferenceSession.create("pretrained.onnx")
+	__sess = await ort.InferenceSession.create("Resemblyzer/pretrained.onnx")
 }
 
 var embed_audio = async function (url) {
