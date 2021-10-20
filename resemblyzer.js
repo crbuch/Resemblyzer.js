@@ -1,11 +1,8 @@
-
 /*
 the functions for computing the mel spectrograms came from fft.js 
 (https://github.com/indutny/fft.js)
 and magenta.js
 (https://github.com/magenta/magenta-js)
-
-
 Input for melSpectrogram()
  {
   sampleRate: number;
@@ -715,6 +712,7 @@ const getSamples = function (url) {
 	return promise;
 }
 const trim_silence = function (data) {
+	data[1] = Array.from(data[1]);
 	//gets rid of unneccessary silence at beginning and end of file.
 	while (data[1][0] == 0) {
 		data[1].shift();
