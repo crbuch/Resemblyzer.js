@@ -1,5 +1,5 @@
 # Resemblyzer.js
-An implementation of CorentinJ's [Resemblyzer](https://github.com/resemble-ai/Resemblyzer) in Javascript for speech analysis the web. 
+An recreation of CorentinJ's [Resemblyzer](https://github.com/resemble-ai/Resemblyzer) as a Javascript module for speech analysis on the web. 
 
 # What it can be used for
 Given a few seconds of speech it creates a summary vector of 256 values known as an encoding. This can be used in many things such as speaker verification, deepfake detection, voice cloning, speaker diarization, and much more. The pretrained model came from [the original repo](https://github.com/resemble-ai/Resemblyzer) and was converted to onnx to use with onnxjs. I rewrote all the preprocessing parts in javascript and took the neccessary parts from [Magenta.js](https://github.com/magenta/magenta-js) to convert the raw audio to mel spectrograms for the network. 
